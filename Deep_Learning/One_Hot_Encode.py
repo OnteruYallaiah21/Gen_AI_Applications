@@ -6,7 +6,7 @@ Data={
       'Names':['Yallaiah','Khadar','Rayudu','Mahesh']
       }
 print(Data)
-df=pd.DataFrame(Data)
+df=pd.DataFrame(Data) 
 print(f"originl Data frame is \n{df}")
 #encodes intilization
 encode=OneHotEncoder(sparse_output=False)
