@@ -10,7 +10,7 @@ st.write(f"you selected {choise}")
 dfNames=pd.DataFrame({"Name":["Yallaiah","Khadar","Praneeth","Ganesh","Mahesh"],
                  "City":["Milwaukee","Guntur","Iowa","Milwaukee","Kenasas"],
                  "PHONE":[6856898,55252535,52532454,5235353,42443412]})
-dfNames.to_csv("SampleStreamLit.csv")
+dfNames.to_csv("SampleStreamLit.csv ")
 st.write(dfNames)
 uploade_file=st.file_uploader("choose csv file",type="csv")
 if uploade_file is not None:

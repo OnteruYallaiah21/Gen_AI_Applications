@@ -21,7 +21,8 @@ for i in range (0,len(dfMessage)):
 #print(corpos[1])
 #create a bag of words model
 from sklearn.feature_extraction.text import CountVectorizer
-cv=CountVectorizer(max_features=2500,binary=True,lowercase=True)
+cv=CountVectorizer(max_features=2500,binary=True,lowercase=True,ngram_range=(2,3))
 X=cv.fit_transform(corpos)
 print(X)
 #print(X.shape)
+print(cv.vocabulary_)
