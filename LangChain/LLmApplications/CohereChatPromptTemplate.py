@@ -10,7 +10,7 @@ try:
     apikey=os.getenv("COHERE_API_KEY")
     llm_model=ChatCohere(model='command-r-plus',max_tokens=100,api_key=apikey,temperature=0.7)
     tempalte="Can you tell me How prepare the dish in style of {Style_of_Dish}"
-    prompt_template=ChatPromptTemplate([("system",tempalte),("user","{DishName}")])
+    prompt_template=ChatPromptTemplate([("system",tempalte), ("user","{DishName}")])
     response=prompt_template.invoke({"Style_of_Dish":"Iran","DishName":"Biryani"})
     #if we print the above output we get response the like ai bot genarated style for developing the user
     #user defined styel we can use the output parser
