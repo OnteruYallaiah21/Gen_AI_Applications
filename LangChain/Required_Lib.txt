@@ -1,5 +1,0 @@
-ipykernal
-matplotlib
-seaborn
-flask
-memory_profiler

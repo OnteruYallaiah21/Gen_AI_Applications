@@ -19,7 +19,7 @@ try:
     prompt_template=ChatPromptTemplate.from_messages([("system",question),("user","{dishname}")])
     parser=StrOutputParser()
     model_chain=prompt_template | llmmodel | StrOutputParser
-    response=model_chain.invoke({"style_of_dish":"iran","dishname":"chicken Biryani"})
+    response=model_chain.invoke({"style_of_dish":"iran", "dishname":"chicken Biryani"})
     folderpath="D:\Projects\LangchainProjects\DataSets"
     filename="dishPreaparation"
     save_file(folderpath,filename,response)
