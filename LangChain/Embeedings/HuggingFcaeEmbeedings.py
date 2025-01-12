@@ -1,6 +1,6 @@
 import os
 from langchain_huggingface import HuggingFaceEmbeddings
-os.environ['HF_TOKEN']='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'
+os.environ['HF_TOKEN']=os.getenv('HF_API_KEY')
 embeeding=HuggingFaceEmbeddings(model_name='all-MiniLM-L6-v2')
 text="this is Text  document"
 queryResult=embeeding.embed_query(text)
